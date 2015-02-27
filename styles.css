@@ -45,9 +45,12 @@ html {
   width: 70%;
   height: 150px;
 
+
 }
 
 h1.brandname{
 
   font-size: 50px;
+  margin-top: 25px;
+  vertical-align: middle;
 }
