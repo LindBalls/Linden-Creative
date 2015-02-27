@@ -32,7 +32,6 @@ ______________________________________*/
     font-weight: Hairline;
 }
 
-
 @font-face {
     font-family: Montserrat-Light;
     src: url(fonts/monsterrat/Montserrat-Light.otf);
@@ -40,13 +39,12 @@ ______________________________________*/
 }
 
 html {
-  background: url(images/IMG_0014.png) no-repeat center center fixed;
+  background: url(images/bg.png) no-repeat center center fixed;
   -webkit-background-size: 100% 50%;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
 
 #header {
   margin-top: 200px;
@@ -56,22 +54,22 @@ html {
   padding-bottom: 10px;
   font-color: #363636;
   font-family: Montserrat-Hairline;
-  width: 28%;
-  height: 110px;
+  width: 38%;
+  height: 130px;
   margin-left: 300px;
 }
 
 h1.brandname{
   font-family: 'Montserrat-Hairline', sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 75px;
   margin-top: 25px;
   letter-spacing: 10px;
   margin: auto;
+  margin-left: -5px;
   margin-right: none;
 
 }
-
 
 p{
   font-family: 'Montserrat-Light', sans-serif;
