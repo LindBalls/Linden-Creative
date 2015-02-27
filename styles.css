@@ -20,19 +20,26 @@ input,select{vertical-align:middle}
 
 
 /* styles begin
+-webkit-background-size: 100% 50%;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 
 ______________________________________*/
-
-html {
-  background: url(images/IMG_0014.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Hairline.otf);
+    font-weight: Hairline;
 }
 
 
+html {
+  background: url(images/IMG_0014.png) no-repeat center center fixed;
+  -webkit-background-size: 100% 50%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 #header {
@@ -41,16 +48,22 @@ html {
   border-bottom: 1px solid rgba(54, 54, 54, .5);
   padding: 15px 15px;
   font-color: #363636;
-  font-family: monsterrat;
+  font-family: Monsterrat;
   width: 70%;
   height: 150px;
-
+  font-weight: Hairline;
 
 }
 
 h1.brandname{
-
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   margin-top: 25px;
   vertical-align: middle;
+}
+
+
+p{
+  font-family: 'Montserrat', sans-serif;
+
 }
