@@ -1,0 +1,17 @@
+
+
+
+body {
+
+  background: url(images/IMG_0014.jpg);
+  
+}
+
+
+#header {
+
+  border-top: 1px solid rgba(54, 54, 54, .5);
+  border-bottom: 1px solid rgba(54, 54, 54, .5);
+  padding: 15px 15px;
+
+}
