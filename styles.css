@@ -25,7 +25,7 @@ input,select{vertical-align:middle}
 -o-background-size: cover;
 background-size: cover;
 
-______________________________________*/
+_______________________________________*/
 @font-face {
     font-family: Montserrat-Hairline;
     src: url(fonts/monsterrat/Montserrat-Hairline.otf);
@@ -93,6 +93,32 @@ p{
 }
 
 
+/* Content Sections
+
+_______________________________________*/
+
+#one{
+  margin-top: 50px;
+  height: 500px;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
+#two{
+  height: 500px;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
+#three{
+  height: 500px;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
+#four{
+  height: 500px;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
+
 /* Sticky Nav Begins
 
 
@@ -141,6 +167,7 @@ _______________________________________*/
 .sticky-nav-ul {
   width: 1200px;
   margin: 0px auto;
+  font-family: 'Montserrat-Light', sans-serif;
 }
 
 .sticky-nav-li {
