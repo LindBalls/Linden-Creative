@@ -38,12 +38,20 @@ ______________________________________*/
     font-weight: Hairline;
 }
 
-html {
+
+
+.header-container{
   background: url(images/bg.png) no-repeat center center fixed;
-  -webkit-background-size: 100% 50%;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+}
+
+.site-container{
+  position:relative;
+  margin:0 auto;
+  text-align:left;
+  clear:left;
+  height:auto;
+  z-index: 0;
 }
 
 #header {
