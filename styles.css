@@ -43,7 +43,7 @@ _______________________________________*/
 .header-container{
   background: url(images/bg.png) no-repeat center center fixed;
   background-size: cover;
-  height: 700px;
+  height: 900px;
 }
 
 
@@ -58,7 +58,7 @@ _______________________________________*/
 
 
 
-.header-position {padding-top: 400px;}
+.header-position {padding-top: 600px;}
 
 #header {
   border-top: 1px solid rgba(54, 54, 54, .45);
@@ -165,7 +165,9 @@ _______________________________________*/
 }
 
 .sticky-nav-ul {
-  width: 1200px;
+  border: 1px solid red;
+  height: 85px;
+  width: 100%;
   margin: 0px auto;
   font-family: 'Montserrat-Light', sans-serif;
 }
@@ -175,6 +177,7 @@ _______________________________________*/
   float: left;
   margin-left: 1%;
   margin-right: 1%;
+  margin-top: 35px;
 }
 
 .subscribe-now a {
