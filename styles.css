@@ -116,7 +116,7 @@ body:before {
   font-family: Montserrat-Light;
   width: 612px;
   height: 130px;
-  margin-left: 375px;
+  margin-left: 335px;
   margin-right: 0px !important;
 }
 
@@ -149,7 +149,7 @@ _______________________________________*/
 #one{
   margin-top: 0px;
   height: 1000px;
-  font-family: 'Montserrat-Light', sans-serif;
+
   background-image: url("images/bg1.png");
   text-align: center;
 
@@ -157,7 +157,7 @@ _______________________________________*/
 
 #two{
   height: 1000px;
-  font-family: 'Montserrat-Light', sans-serif;
+
   background-image: url("images/bg2.png");
   text-align: center;
 
@@ -166,7 +166,7 @@ _______________________________________*/
 
 #three{
   height:1000px;
-  font-family: 'Montserrat-Light', sans-serif;
+
   background-image: url("images/bg1.png");
   text-align: center;
 
@@ -175,7 +175,7 @@ _______________________________________*/
 
 #four{
   height: 1000px;
-  font-family: 'Montserrat-Light', sans-serif;
+
   background-image: url("images/bg2.png");
   text-align: center;
 
@@ -188,8 +188,13 @@ _______________________________________*/
   height: 895px;
   width: 80%;
   margin: auto;
+  font-family: 'Montserrat-Hairline', sans-serif;
 }
 
+
+p.resume {
+  text-align: center !important;
+}
 
 /* Sticky Nav Begins
 
