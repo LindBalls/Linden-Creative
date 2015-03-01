@@ -151,12 +151,16 @@ _______________________________________*/
   height: 1000px;
   font-family: 'Montserrat-Light', sans-serif;
   background-image: url("images/bg1.png");
+  text-align: center;
+
 }
 
 #two{
   height: 1000px;
   font-family: 'Montserrat-Light', sans-serif;
   background-image: url("images/bg2.png");
+  text-align: center;
+
 }
 
 
@@ -164,6 +168,8 @@ _______________________________________*/
   height:1000px;
   font-family: 'Montserrat-Light', sans-serif;
   background-image: url("images/bg1.png");
+  text-align: center;
+
 }
 
 
@@ -171,8 +177,18 @@ _______________________________________*/
   height: 1000px;
   font-family: 'Montserrat-Light', sans-serif;
   background-image: url("images/bg2.png");
+  text-align: center;
+
 }
 
+
+.content-sections{
+  padding-top: 95px;
+  border: solid 1px #515151;
+  height: 895px;
+  width: 80%;
+  margin: auto;
+}
 
 
 /* Sticky Nav Begins
@@ -264,9 +280,9 @@ _______________________________________*/
   opacity: 0.0;
   background-color: #515151;
   border-radius: none;
-  width: 43px;
-  height: 40px;
-  margin-top: -5px;
+  width: 33px;
+  height: 30px;
+  margin-top: 0px;
   margin-right: 10px;
   margin-left: -20px;
   vertical-align: middle;
@@ -277,9 +293,9 @@ _______________________________________*/
   opacity: 1;
   background-color: #515151;
   border-radius: none;
-  width: 43px;
-  height: 40px;
-  margin-top: -5px;
+  width: 33px;
+  height: 30px;
+  margin-top: 0px;
   margin-right: 10px;
   margin-left: -20px;
   vertical-align: middle;
