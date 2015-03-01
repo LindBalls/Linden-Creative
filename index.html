@@ -7,6 +7,122 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+	   	var stickyNavTop = $('.nav-nav').offset().top;
+	   	var stickyNav = function(){
+		    var scrollTop = $(window).scrollTop();
+		    if (scrollTop > stickyNavTop) {
+		        $('.nav-nav').addClass('sticky');
+		    } else {
+		        $('.nav-nav').removeClass('sticky');
+		    }
+		};
+		stickyNav();
+		$(window).scroll(function() {
+			stickyNav();
+		});
+	});
+</script>
+
+<!-- easing start -->
+<meta charset="utf-8">
+ <title>jQuery UI Effects - Easing demo</title>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+ <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+ <link rel="stylesheet" href="/resources/demos/style.css">
+ <style>
+ .graph {
+   float: left;
+   margin-left: 10px;
+ }
+ </style>
+ <script>
+ $(function() {
+   if ( !$( "<canvas>" )[0].getContext ) {
+     $( "<div>" ).text(
+       "Your browser doesn't support canvas, which is required for this demo."
+     ).appendTo( "#graphs" );
+     return;
+   }
+
+   var i = 0,
+     width = 100,
+     height = 100;
+
+   $.each( $.easing, function( name, impl ) {
+     var graph = $( "<div>" ).addClass( "graph" ).appendTo( "#graphs" ),
+       text = $( "<div>" ).text( ++i + ". " + name ).appendTo( graph ),
+       wrap = $( "<div>" ).appendTo( graph ).css( 'overflow', 'hidden' ),
+       canvas = $( "<canvas>" ).appendTo( wrap )[ 0 ];
+
+     canvas.width = width;
+     canvas.height = height;
+     var drawHeight = height * 0.8,
+       cradius = 10;
+       ctx = canvas.getContext( "2d" );
+     ctx.fillStyle = "black";
+
+     // draw background
+     ctx.beginPath();
+     ctx.moveTo( cradius, 0 );
+     ctx.quadraticCurveTo( 0, 0, 0, cradius );
+     ctx.lineTo( 0, height - cradius );
+     ctx.quadraticCurveTo( 0, height, cradius, height );
+     ctx.lineTo( width - cradius, height );
+     ctx.quadraticCurveTo( width, height, width, height - cradius );
+     ctx.lineTo( width, 0 );
+     ctx.lineTo( cradius, 0 );
+     ctx.fill();
+
+     // draw bottom line
+     ctx.strokeStyle = "#555";
+     ctx.beginPath();
+     ctx.moveTo( width * 0.1, drawHeight + .5 );
+     ctx.lineTo( width * 0.9, drawHeight + .5 );
+     ctx.stroke();
+
+     // draw top line
+     ctx.strokeStyle = "#555";
+     ctx.beginPath();
+     ctx.moveTo( width * 0.1, drawHeight * .3 - .5 );
+     ctx.lineTo( width * 0.9, drawHeight * .3 - .5 );
+     ctx.stroke();
+
+     // plot easing
+     ctx.strokeStyle = "white";
+     ctx.beginPath();
+     ctx.lineWidth = 2;
+     ctx.moveTo( width * 0.1, drawHeight );
+     $.each( new Array( width ), function( position ) {
+       var state = position / width,
+         val = impl( state, position, 0, 1, width );
+       ctx.lineTo( position * 0.8 + width * 0.1,
+         drawHeight - drawHeight * val * 0.7 );
+     });
+     ctx.stroke();
+
+     // animate on click
+     graph.click(function() {
+       wrap
+         .animate( { height: "hide" }, 2000, name )
+         .delay( 800 )
+         .animate( { height: "show" }, 2000, name );
+     });
+
+     graph.width( width ).height( height + text.height() + 10 );
+   });
+ });
+ </script>
+
+
+
+<!-- easing end  -->
+
+
+
+
 <script>
 (function( $ ){
 
@@ -176,38 +292,48 @@
 
 <body>
 <div class="site-container">
-	<div class="header-container">
-		<div class="header-position">
-			<div id="header">
-			  <h1 class="brandname">LindenKreativ</h1>
-			  <p>Nathan Edward Lindblad <br />
-			    For Collins, Colorado<br />
-			    520.730.6814</p>
-			</div>
-		</div>
-	</div>
-	<div class="sticky-nav">
-    <ul class="sticky-nav-ul">
-    			<li class="sticky-nav-li"><a href="#one" onclick="$.scrollTo( '#one', 750 ); return false;"><img class="sticky-nav-li-img" alt="" /><span class="section-title">WORK</span></a></li>
-    			<li class="sticky-nav-li"><a href="#two" onclick="$.scrollTo( '#two', 750 ); return false;"><img class="sticky-nav-li-img" alt="" /><span class="section-title">ABOUT</span></a></li>
-    			<li class="sticky-nav-li"><a href="#three" onclick="$.scrollTo( '#three', 750 ); return false;"><img class="sticky-nav-li-img" alt="" /><span class="section-title">RESUME</span></a></li>
-    			<li class="sticky-nav-li"><a href="#four" onclick="$.scrollTo( '#four', 750 ); return false;"><img class="sticky-nav-li-img" alt="" /><span class="section-title">SAY HI!</span></a></li>
-    		</ul>
-	</div>
+    <div class="nav-wrapper">
+      <div class="nav-header">
+    	<div class="header-container">
+    		<div class="header-position">
+    			<div id="header">
+    			  <h1 class="brandname">LindenKreativ</h1>
+    			  <p>Nathan Edward Lindblad <br />
+    			    For Collins, Colorado<br />
+    			    520.730.6814</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
 
-	<div id="one">
-		content
-	</div>
-	<div id="two">
-		content
-	</div>
-	<div id="three">
-		content
-	</div>
-  <div id="four">
-		content
-	</div>
+
+  <div class="nav-nav">
+  	<div class="sticky-nav">
+      <ul class="sticky-nav-ul">
+      			<li class="sticky-nav-li"><a href="#one" onclick="$.scrollTo( '#one', 750 ); return false;"><img class="sticky-nav-li-img" src="images/nav_icon.png" alt="" /><span class="section-title">WORK</span></a></li>
+      			<li class="sticky-nav-li"><a href="#two" onclick="$.scrollTo( '#two', 750 ); return false;"><img class="sticky-nav-li-img" src="images/nav_icon.png" alt="" /><span class="section-title">ABOUT</span></a></li>
+      			<li class="sticky-nav-li"><a href="#three" onclick="$.scrollTo( '#three', 750 ); return false;"><img class="sticky-nav-li-img" src="images/nav_icon.png" alt="" /><span class="section-title">RESUME</span></a></li>
+      			<li class="sticky-nav-li"><a href="#four" onclick="$.scrollTo( '#four', 750 ); return false;"><img class="sticky-nav-li-img" src="images/nav_icon.png" alt="" /><span class="section-title">SAY HI!</span></a></li>
+      </ul>
+    </div>
 </div>
+  <div class="nav-content">
+  	<div id="one">
+  		content
+  	</div>
+  	<div id="two">
+  		content
+  	</div>
+  	<div id="three">
+  		content
+  	</div>
+    <div id="four">
+  		content
+  	</div>
+  </div>
+</div><!-- sitecontainer -->
+
 
 
 </body>

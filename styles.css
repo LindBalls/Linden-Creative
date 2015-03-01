@@ -56,6 +56,23 @@ table {
 background-size: cover;
 
 _______________________________________*/
+
+body:before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 30px rgba(54,54,54,.5);
+  -moz-box-shadow: 0px 0px 30px rgba(54,54,54,.5);
+  box-shadow: 0px 0px 30px rgba(54,54,54,.5);
+}
+
+
+
+
 @font-face {
     font-family: Montserrat-Hairline;
     src: url(fonts/monsterrat/Montserrat-Hairline.otf);
@@ -97,9 +114,10 @@ _______________________________________*/
   padding-bottom: 10px;
   font-color: #363636;
   font-family: Montserrat-Light;
-  width: 605px;
+  width: 612px;
   height: 130px;
-  margin-left: 300px;
+  margin-left: 375px;
+  margin-right: 0px !important;
 }
 
 h1.brandname{
@@ -120,6 +138,7 @@ p{
   padding-left: 5px;
   line-height: 18px !important;
   letter-spacing: 4px;
+  text-align: left;
 }
 
 
@@ -128,25 +147,32 @@ p{
 _______________________________________*/
 
 #one{
-  margin-top: 50px;
-  height: 500px;
+  margin-top: 0px;
+  height: 1000px;
   font-family: 'Montserrat-Light', sans-serif;
+  background-image: url("images/bg1.png");
 }
 
 #two{
-  height: 500px;
+  height: 1000px;
   font-family: 'Montserrat-Light', sans-serif;
+  background-image: url("images/bg2.png");
 }
+
 
 #three{
-  height: 500px;
+  height:1000px;
   font-family: 'Montserrat-Light', sans-serif;
+  background-image: url("images/bg1.png");
 }
 
+
 #four{
-  height: 500px;
+  height: 1000px;
   font-family: 'Montserrat-Light', sans-serif;
+  background-image: url("images/bg2.png");
 }
+
 
 
 /* Sticky Nav Begins
@@ -165,19 +191,23 @@ _______________________________________*/
 }
 
 .nav-header {
+  margin-right:0px;
 
 }
 
 .nav-nav {
-  padding: 25px 0;
+  padding: 0 0;
   background-color: rgba(255,255,255,0.95);
   position: -webkit-sticky;
   top: 0px;
   z-index: 1;
+  -webkit-box-shadow: -3px 15px 42px -14px rgba(81,81,81,0.60);
+  -moz-box-shadow: -3px 15px 42px -14px rgba(81,81,81,0.60);
+  box-shadow: -3px 15px 42px -14px rgba(81,81,81,0.60);
 }
 
 .nav-header, .nav-nav {
-  margin: auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -187,27 +217,32 @@ _______________________________________*/
 
 .sticky {
   position: fixed;
-  width: 1200px;
+  width: 100%;
   top: 0px;
   z-index: 100;
   border-top: 0;
   transition: all .4s ease;
+  -webkit-box-shadow: -3px 15px 42px -14px rgba(81,81,81,0.60);
+  -moz-box-shadow: -3px 15px 42px -14px rgba(81,81,81,0.60);
+  box-shadow: -3px 15px 42px -14px rgba(81,81,81,0.60);
+
 }
 
 .sticky-nav-ul {
-  background: #515151;
-  border: 1px solid red;
+  padding-left: 200px;
+  background: rgba(54,54,54,0.85);
   height: 85px;
+  font-size: 12px;
   width: 100%;
-  margin: 0px auto;
-  font-family: 'Montserrat-Light', sans-serif;
+  margin: 0px 0px;
+  font-family: 'Montserrat-Hairline', sans-serif;
 }
 
 .sticky-nav-li {
   text-decoration: none !important;
   width: 11%;
   float: left;
-  margin-left: 1%;
+  margin-left: 5%;
   margin-right: 1%;
   margin-top: 25px;
 
@@ -226,22 +261,47 @@ _______________________________________*/
 }
 
 .sticky-nav-li-img {
-  background-color: #2F83DB;
-  border-radius: 15px;
-  width: 30px;
-  height: 30px;
+  opacity: 0.0;
+  background-color: #515151;
+  border-radius: none;
+  width: 43px;
+  height: 40px;
   margin-top: -5px;
+  margin-right: 10px;
+  margin-left: -20px;
+  vertical-align: middle;
   outline: 0;
 }
 
-span.section-title{
+.sticky-nav-li-img:hover {
+  opacity: 1;
+  background-color: #515151;
+  border-radius: none;
+  width: 43px;
+  height: 40px;
+  margin-top: -5px;
+  margin-right: 10px;
+  margin-left: -20px;
+  vertical-align: middle;
+  outline: 0;
+}
+
+span.section-title:hover {
   text-decoration: none !important;
 }
 
+a {
+color: #fff;
+list-style: none;
+text-decoration: none;
+}
 
-a:-webkit-any-link {
-  vertical-align: middle;
-  color: #fff;
-  text-decoration: none !important;
-  cursor: auto;
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
 }
