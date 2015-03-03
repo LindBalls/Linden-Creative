@@ -153,6 +153,14 @@ p{
 
 _______________________________________*/
 
+div#one, div#two, div#three, div#four{
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+
+
 #one{
   margin-top: 0px;
   height: 1000px;
@@ -333,3 +341,42 @@ list-style-type: disc;
 -webkit-margin-end: 0px;
 -webkit-padding-start: 0px;
 }
+
+ .graph {
+   float: left;
+   margin-left: 10px;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
