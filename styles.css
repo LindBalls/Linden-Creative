@@ -101,9 +101,18 @@ body:before {
   clear:left;
   height:auto;
   z-index: 0;
-  width:1200px;
+  width:100%;
 }
 
+.site-container-1080{
+  position:relative;
+  margin:0 auto;
+  text-align:left;
+  clear:left;
+  height:auto;
+  z-index: 0;
+  width:1080px;
+}
 
 
 .header-position {padding-top: 600px;}
