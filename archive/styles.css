@@ -172,9 +172,8 @@ div#one, div#two, div#three, div#four{
 
 #two{
   height: 1000px;
-
   background-image: url("images/bg2.png");
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -346,37 +345,3 @@ list-style-type: disc;
    float: left;
    margin-left: 10px;
  }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
