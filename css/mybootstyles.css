@@ -62,3 +62,15 @@ p{
   letter-spacing: 4px;
   text-align: left;
 }
+
+.no-padding{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+
+}
+
+
+.about-container{
+  background: blue;
+
+}
