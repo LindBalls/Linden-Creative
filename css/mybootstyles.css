@@ -71,6 +71,31 @@ p{
 
 
 .about-container{
-  background: blue;
+  background: none;
+  height: 900px;
+  border: solid 1px red;
+}
+
+.about-position{
+
+
+}
+
+.resume-main{
+
+}
+
+.resume-container{
+  background: none;
+  height: 900px;
+  border: solid 1px blue;
+}
+
+.resume-position{
+
+
+}
+
+.resume-main{
 
 }
