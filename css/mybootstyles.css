@@ -73,6 +73,7 @@ p{
   background: none;
   height: 900px;
   border: solid 1px green;
+  margin-bottom: 100px;
 }
 
 .work-position{
@@ -85,9 +86,13 @@ p{
 }
 
 .about-container{
-  background: none;
+  background-image: url('../images/about_cover.png');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 900px;
   border: solid 1px red;
+  margin-bottom: 100px;
 }
 
 .about-position{
@@ -103,6 +108,7 @@ p{
   background: none;
   height: 900px;
   border: solid 1px blue;
+  margin-bottom: 100px;
 }
 
 .resume-position{
@@ -111,5 +117,10 @@ p{
 }
 
 .resume-main{
+
+}
+
+.navbar navbar-inverse navbar-static-top {
+  height: 90px;
 
 }
