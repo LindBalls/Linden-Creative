@@ -106,7 +106,7 @@ body:before {
 
 .site-container-1080{
   position:relative;
-  margin:0 auto;
+  margin: none;
   text-align:left;
   clear:left;
   height:auto;
