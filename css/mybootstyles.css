@@ -179,6 +179,10 @@ h3.about-header{
 
 }
 
+.navbar-wrapper .navbar {
+    opacity: .8;
+}
+
 .navbar navbar-inverse navbar-static-top {
   height: 90px;
 
