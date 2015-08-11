@@ -277,8 +277,8 @@ h3.section-headers{
 }
 
 .header-wrapper{
-  border-top: 1px solid rgba(239, 239, 239, .95);
-  border-bottom: 1px solid rgba(239, 239, 239, .95);
+  border-top: 1px solid rgba(239, 239, 239, .0);
+  border-bottom: 1px solid rgba(239, 239, 239, .0);
   height: 50px;
   margin-top: 100px;
 }
@@ -293,6 +293,11 @@ h3.section-headers{
 }
 
 .about-header {
+  margin-top: 100px;
+}
+
+.about-wrapper{
+  height: 50px;
   margin-top: 100px;
 }
 
@@ -372,6 +377,14 @@ h3.section-headers{
     font-weight: 300;
     color: #fff !important;
     background-color: #6b7988 !important;
+}
+
+#navbar ul li:active {
+  text-decoration: none;
+}
+
+#navbar ul li:visited {
+  text-decoration: none;
 }
 
 #navbar ul li:hover {
