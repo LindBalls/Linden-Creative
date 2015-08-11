@@ -87,7 +87,7 @@ h1.brandname{
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 28px;
+  letter-spacing: 22px;
   width: inherit;
   color: #6b7988;
   text-transform: uppercase;
@@ -171,15 +171,48 @@ ul.thumbnails li {
   height: 225px !important;
   margin-right: 24px;
   margin-bottom: 30px;
-  border: 1px dotted blue;
-  background-color: #6b7988;
+  background-color: #e0e0de;
+  position: relative;
+}
+
+ul.thumbnails li:before, ul.thumbnails li:after {
+  content:"";
+  z-index: -1;
+position: absolute;
+content: "";
+bottom: 15px;
+left: 5px;
+width: 94%;
+top: 80%;
+max-width:300px;
+background: #777;
+-webkit-box-shadow: 0 15px 10px #777;
+-moz-box-shadow: 0 15px 10px #777;
+box-shadow: 0 15px 10px #777;
+-webkit-transform: rotate(-3deg);
+-moz-transform: rotate(-3deg);
+-o-transform: rotate(-3deg);
+-ms-transform: rotate(-3deg);
+transform: rotate(-3deg);
+opacity: .8;
+
+}
+
+ul.thumbnails li:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 5px;
+  left: auto;
 }
 
 ul.thumbnails li a {
   width: 90%;
   height: 185px;
   margin: auto;
-  background-color: #6b7988;
+  background-color: #e0e0de;
   padding: 0px;
   position: relative;
 }
@@ -188,18 +221,33 @@ ul.thumbnails li a img {
   width: 100%%;
   height: 185px;
   padding: 0px;
-  margin-top: 4px;
+  margin-top: 10px;
   overflow: hidden !important;
   position: absolute;
 }
 
 ul.thumbnails li a:link {
   text-decoration: none;
-  opacity: 0.5;
+  color: none;
+  border: none;
 }
 
 ul.thumbnails li a:hover {
   opacity: none;
+  text-decoration: none;
+  color: none;
+  border: none;
+  opacity: 1.0;
+}
+
+ul.thumbnails li a:visited {
+  opacity: none;
+  text-decoration: none;
+}
+
+ul.thumbnails li a:active {
+  opacity: none;
+  text-decoration: none;
 }
 
 
@@ -244,6 +292,9 @@ h3.section-headers{
   background-color: #fff;
 }
 
+.about-header {
+  margin-top: 100px;
+}
 
 .about-position{
 
@@ -329,6 +380,35 @@ h3.section-headers{
 }
 
 
+/* ABOUT Selectors ========================================== */
+
+.resume-sub {
+  float:left;
+}
+
+h1.resumename {
+  text-align: left;
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+p.resume {
+  text-align:left;
+  clear: both;
+}
+
+h4.resume-sub {
+  text-align: left;
+  line-height: 20px;
+  font-weight:100;
+  font-size: 12px;
+  letter-spacing: 4px;
+
+}
+
 /* RESPONSIVE Selectors ===================================== */
 
 
@@ -338,6 +418,10 @@ h3.section-headers{
     width: 100% !important;
   }
 
+}
+
+@media (min-width: 992px) {
+.container {width: 100% !important;}
 }
 
 
