@@ -171,7 +171,7 @@ ul.thumbnails li {
   height: 225px !important;
   margin-right: 24px;
   margin-bottom: 30px;
-  background-color: #e0e0de;
+  background-color: #F7F7F7;
   position: relative;
 
 }
@@ -213,7 +213,7 @@ ul.thumbnails li a {
   width: 90%;
   height: 185px;
   margin: auto;
-  background-color: #e0e0de;
+  background-color: #F7F7F7;
   padding: 0px;
   position: relative;
 }
@@ -313,6 +313,9 @@ h3.section-headers{
 
 
 /* NAVBAR Selectors ==================================== */
+.navbar-inverse {
+  border-color: none;
+}
 
 #navposition {
   margin: auto;
@@ -333,8 +336,9 @@ h3.section-headers{
     color: #6b7988;
 }
 
-.navbar navbar-inverse navbar-static-top {
+.navbar .navbar-inverse .navbar-static-top {
     height: 90px;
+    border: none !important;
 }
 
 #navbar {
@@ -468,6 +472,19 @@ h4.resume-sub {
   letter-spacing: 4px;
 
 }
+
+.resume-skills {
+  list-style-type: none;
+  text-align: left;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-top: 1px solid #6b7988;
+}
+
+
 
 /* RESPONSIVE Selectors ===================================== */
 
