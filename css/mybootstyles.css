@@ -651,17 +651,18 @@ ul.skillslist {
 
 
 /* iphone 6 REGULAR */
-@media screen
-and (min-width: 320px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 479px) {
 
   .intro {
       background-color: #f0efed;
       background-size: cover;
       width: 100%;
-      height: 1440px;
-      text-align: center;
+      height: auto;
   }
 
+  .intro-section {
+      width: 100%;
+  }
 
     .header-container {
       background-color: #f0efed;
@@ -673,30 +674,21 @@ and (min-width: 320px) {
 
 
 
-  .header-position {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    margin-top: 170px;
-    width: 100%;
-    text-align: center;
+  .header-position img {
+      margin: 0px;
+      height: 350px;
+      text-align: center;
   }
 
-  .header-position img {
-    margin: auto;
-    width: 70%;
-    height: auto;
-}
 
-
-p.address {
+  p.address {
     font-size: 8px;
     text-transform: uppercase;
-    letter-spacing: 0px;
-    line-height: 10px !important;
+    letter-spacing: 5px;
+    line-height: 16px !important;
     text-align: center;
     margin-left: -15px;
-}
+  }
 
   .site-container{
     position:relative;
@@ -710,24 +702,25 @@ p.address {
 
 
   #header-main {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      font-family: futura-pt;
-      width: 100%;
-      margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: futura-pt;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
-  h1.brandname {
-      font-family: "futura-pt",sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 12px;
-      letter-spacing: 12px;
-      width: 100%;
-      color: #6b7988;
-      text-transform: uppercase;
-      text-align: center;
+  h1.brandname{
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 22px;
+    width: inherit;
+    color: #6b7988;
+    text-transform: uppercase;
   }
 
   h1.contentheaders{
@@ -759,13 +752,8 @@ p.address {
 
   .container {
     width: 100%;
+  }
 
-}
-
-
-.work-section-header {
-    width: 100%;
-}
 
 
 
