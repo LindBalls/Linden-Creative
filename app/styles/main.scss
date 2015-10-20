@@ -20,6 +20,10 @@ $icon-font-path: '../fonts/';
     body{
         color: #f1c40f;
     }
+    
+    .text-muted {
+    color: #95a5a6;
+}
     .navbar-inverse {
         background-color: #f1c40f;
         border: none;
@@ -28,33 +32,44 @@ $icon-font-path: '../fonts/';
                 border-color: transparent;
                 border-radius: 90%;
                 background-color: #34495e;
-                padding: 15px 15px 15px 15px;    
+                padding: 15px 15px 15px 15px; 
+                            .icon-bar {
+                                display: block;
+                                width: 12px;
+                                height: 1px;
+                                border-radius: 0px;
+                                padding: 0px;
+                                background-color: #f1c40f;
+                            }  
                     .collapsed {
-                        span.icon-bar-one {
-                            color: #d5835b;
-                        }
-                        span.icon-bar-two {
-                             background-color: #a26c8e;
-                        }
-                        span.icon-bar-three {
-                             background-color: #34495e;
-                 }
+                        background-color: #f1c40f;
+                    .collapse {
+                        background-color: #f1c40f;
+                    }
              }
         }
         
             .navbar-toggle:hover { 
-                background-color: #2ecc71;
+                background-color: #e74c3c;
             }
             .navbar-toggle:focus { 
-                background-color: #34495e;
+                    background-color:#34495e;;
             }
                     .navbar-nav li a {
-                    color: #34495e;
-                    background-color: white;
+                        font-family: "futura-pt";
+                        text-transform:: uppercase;
+                        text-align: center;
+                        font-weight: 700;
+                        letter-spacing: 4px;
+                        color: #34495e;
+                        background-color: #f1c40f;
                     }
                     .navbar-nav li a:hover {
-                    color: #f1c40f;
-                }
+                        color: #e74c3c;
+                    }
+                    .navbar-nav li a:focus {
+                        color: #e74c3c;
+                    }
     }  
     
     .container-center {
@@ -72,10 +87,11 @@ $icon-font-path: '../fonts/';
                     margin-bottom: 50px;
                     
                     .hero {
-                        padding-top: 50px;
+                        padding-top: 20px;
                             
                             .img-logo {
                                 width: 90%;
+                                margin-bottom: 20px;
                             }
                             h2.brandname {
                                 text-transform: uppercase;
