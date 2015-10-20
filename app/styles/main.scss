@@ -3,91 +3,124 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+    .body {
+        font-family: "futura-pt";
+        background-color: #dad9c7 !important;
+    }
+    
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+
+
+
+
+
+
+/* Responsive: Portrait iphone 6 */
+@media screen and (max-width: 667px) {
+    body{
+        color: #f1c40f;
+    }
+    .navbar-inverse {
+        background-color: #f1c40f;
+        border: none;
+        box-shadow: 0px -1px 10px #1e2a36;
+            .navbar-toggle {
+                border-color: transparent;
+                border-radius: 90%;
+                background-color: #34495e;
+                padding: 15px 15px 15px 15px;    
+                    .collapsed {
+                        span.icon-bar-one {
+                            color: #d5835b;
+                        }
+                        span.icon-bar-two {
+                             background-color: #a26c8e;
+                        }
+                        span.icon-bar-three {
+                             background-color: #34495e;
+                 }
+             }
+        }
+        
+            .navbar-toggle:hover { 
+                background-color: #2ecc71;
+            }
+            .navbar-toggle:focus { 
+                background-color: #34495e;
+            }
+                    .navbar-nav li a {
+                    color: #34495e;
+                    background-color: white;
+                    }
+                    .navbar-nav li a:hover {
+                    color: #f1c40f;
+                }
+    }  
+    
+    .container-center {
+        padding-top: 50px;
+        margin: auto;
+        text-align: center;
+        background-color: #34495e;
+        padding-left: 0px;
+        padding-right: 0px;
+            .marketing {
+                padding-left: 0px;
+                padding-right: 0px;
+                .row {
+                    margin-top: 75px;
+                    margin-bottom: 50px;
+                    
+                    .hero {
+                        padding-top: 50px;
+                            
+                            .img-logo {
+                                width: 90%;
+                            }
+                            h2.brandname {
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-family: "futura-pt";
+                                letter-spacing: 4px;
+                            }
+                            
+                            hr.featurette-divider {
+                                border: 0;
+                                border-top: 1px solid #f1c40f;
+                                opacity: 0.3;
+                            }
+                            
+                            p {
+                                font-family: "futura-pt";
+                                margin: 0px;
+                                letter-spacing: 4px;
+                                font-size: 12px;
+                            }
+                    }
+                }
+            }
+    }
+    
+    #gallery-container {
+            width: 100%;
+            .container {
+                .row {
+                    h2.brandname {
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        font-family: "futura-pt";
+                        letter-spacing: 4px;
+                        }
+                     hr.featurette-divider {
+                        border: 0;
+                        border-top: 1px solid #f1c40f;
+                        opacity: 0.3;
+                    }
+                }
+            }
+        
+    }
+    
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
