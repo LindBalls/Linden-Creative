@@ -16,9 +16,9 @@ $icon-font-path: '../fonts/';
 
 
 /* Responsive: Portrait iphone 6 */
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 414px) {
     body{
-        color: #f1c40f;
+        color: #dad9c7;
     }
     
     .text-muted {
@@ -26,32 +26,41 @@ $icon-font-path: '../fonts/';
 }
     .navbar-inverse {
         padding-right: 10px;
-        background-color: #f1c40f;
+        background-image: url("/images/navbarBG.png");
         border: none;
-        box-shadow: 0px 2px 10px #1e2a36;
-            .navbar-toggle {
-                border-color: transparent;
-                border-radius: 90%;
-                background-color: #34495e;
-                padding: 15px 15px 15px 15px; 
-                            .icon-bar {
-                                display: block;
-                                width: 12px;
-                                height: 1px;
-                                border-radius: 0px;
-                                padding: 0px;
-                                background-color: #f1c40f;
-                            }  
-                    .collapsed {
-                        background-color: #f1c40f;
-                    .collapse {
-                        background-color: #f1c40f;
-                    }
-             }
-        }
+        box-shadow: 0px 1px 5px #1e2a36;
+            .navbar-header {
+                .navbar-toggle {
+                    border-color: transparent !important;
+                    background-color: transparent !important;
+                    padding: none; 
+                    margin: none;
+                                .icon-bar {
+                                    display: block;
+                                    margin: none;
+                                    width: 25px;
+                                    height: 4px;
+                                    background-color: #dad9c7;
+                                } 
+                } 
+                .collapsed {
+                    background-color: #f1c40f;
+                }
+            }
+            
+            .navbar-collapse {
+                border-top: none;
+                box-shadow: none;
+            }
+            
+            .collapse {
+                background-color:#544eac;
+            }
+             
+        
         
             .navbar-toggle:hover { 
-                background-color: #e74c3c;
+                background-color: transparent;
             }
             .navbar-toggle:focus { 
                     background-color:#34495e;;
@@ -62,11 +71,12 @@ $icon-font-path: '../fonts/';
                         text-align: center;
                         font-weight: 700;
                         letter-spacing: 4px;
-                        color: #34495e;
-                        background-color: #f1c40f;
+                        color: #dad9c7;
+                        background-color:#544eac;
                     }
                     .navbar-nav li a:hover {
-                        color: #e74c3c;
+                        color: #635a71;
+                        background-color: #dad9c7;
                     }
                     .navbar-nav li a:focus {
                         color: #e74c3c;
@@ -75,36 +85,47 @@ $icon-font-path: '../fonts/';
     
     .container-center {
             width: 100%;
-            padding-top: 50px;
+            padding-top: 0px;
             text-align: center;
-            background-color: #34495e;
-            padding-left: 15px;
-            padding-right: 15px;
+            background-color: transparent;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-family: "futura-pt";
             .marketing {
                 padding-left: 0px;
                 padding-right: 0px;
                 .row {
-                    margin-top: 75px;
-                    margin-bottom: 50px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
                     
                     .hero {
-                        padding-top: 20px;
+                        height: 667px;
+                        width: 100%;
+                        background-size: cover;
+                        padding-top: 250px;
+                        background-image: url("/images/heroBG.jpg");
+                    
                             
                             .img-logo {
                                 width: 50%;
                                 margin-bottom: 20px;
                             }
+                            
                             h2.brandname {
                                 text-transform: uppercase;
                                 font-size: 25px;
                                 font-family: "futura-pt";
                                 letter-spacing: 4px;
+                                margin: 0px;
+                                font-weight: 100;
                             }
                             
                             hr.featurette-divider {
                                 border: 0;
                                 border-top: 1px solid #f1c40f;
                                 opacity: 0.3;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
                             }
                             
                             p {
@@ -112,32 +133,290 @@ $icon-font-path: '../fonts/';
                                 margin: 0px;
                                 letter-spacing: 4px;
                                 font-size: 12px;
+                                line-height: 20px;
+                                font-weight: 700;
+                                opacity: 0.7;
                             }
                     }
                 }
-            }
-    }
+            
     
-    #gallery-container {
+    
+    .gallery-container {
             width: 100%;
-            .container {
-                .row {
+            background-color: #635a71;
+            padding: 0px;
+            margin: 0px;
+            min-height: 667px;
+                .gallery-row {
+                    width: 100%;
+                    padding: 0px;
+                    margin: 0px;
                     h2.brandname {
                         text-transform: uppercase;
                         font-size: 25px;
-                        font-family: "futura-pt";
                         letter-spacing: 4px;
                         }
+                        
                      hr.featurette-divider {
                         border: 0;
                         border-top: 1px solid #f1c40f;
-                        opacity: 0.3;
                     }
-                }
-            }
-        
+          }
+       
     }
     
+}
+}
+
+
+.about-me {
+    min-height: 667px;
+    padding-top: 80px;
+    min-height: 100%;
+    color: #28252e;
+    background-color: #dad9c7;
+    .about-img {
+        width: 45%;
+        border-radius: 0%;
+        box-shadow: 0px 3px 10px #1e2a36;
+    }
+    .brandname {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: "futura-pt";
+        letter-spacing: 4px;
+    }
+    .lead {
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+}
+
+
+/* Responsive: Landscape iphone 6 */
+@media screen and (min-width: 415px) and (max-width: 736px) {
+    body{
+        color: #dad9c7;
+    }
+    
+    .text-muted {
+    color: #95a5a6;
+}
+    .navbar-inverse {
+        padding-right: 10px;
+        background-image: url("/images/navbarBG.png");
+        border: none;
+        box-shadow: 0px 1px 5px #1e2a36;
+            .navbar-header {
+                .navbar-toggle {
+                    border-color: transparent !important;
+                    background-color: transparent !important;
+                    padding: none; 
+                    margin: none;
+                                .icon-bar {
+                                    display: block;
+                                    margin: none;
+                                    width: 25px;
+                                    height: 4px;
+                                    background-color: #fff
+                                } 
+                } 
+                .collapsed {
+                    background-color: #f1c40f;
+                }
+            }
+            
+            .navbar-collapse {
+                border-top: none;
+                box-shadow: none;
+            }
+            
+            .collapse {
+                background-color:#544eac;
+            }
+             
+        
+        
+            .navbar-toggle:hover { 
+                background-color: transparent;
+            }
+            .navbar-toggle:focus { 
+                    background-color:#34495e;;
+            }
+                    .navbar-nav li a {
+                        font-family: "futura-pt";
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-weight: 700;
+                        letter-spacing: 4px;
+                        color: #fff;
+                        background-color:#544eac;
+                        padding-right: 0px;
+                    }
+                    .navbar-nav li a:hover {
+                        color: #635a71;
+                        background-color: #fff;
+                    }
+                    .navbar-nav li a:focus {
+                        color: #e74c3c;
+                    }
+    }  
+    
+    .container-center {
+            width: 100%;
+            padding-top: 0px;
+            text-align: center;
+            background-color: transparent;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-family: "futura-pt";
+            .marketing {
+                padding-left: 0px;
+                padding-right: 0px;
+                .row {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    
+                    .hero {
+                        height: 400px;
+                        width: 100%;
+                        background-size: cover;
+                        padding-top: 100px;
+                        background-image: url("/images/landscape.png");
+                    
+                            
+                            .img-logo {
+                                width: 25%;
+                                margin-bottom: 15px;
+                            }
+                            
+                            h2.brandname {
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-family: "futura-pt";
+                                letter-spacing: 4px;
+                                margin: 0px;
+                                font-weight: 100;
+                            }
+                            
+                            hr.featurette-divider {
+                                border: 0;
+                                border-top: 1px solid #f1c40f;
+                                opacity: 0.3;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                            
+                            p {
+                                font-family: "futura-pt";
+                                margin: 0px;
+                                letter-spacing: 4px;
+                                font-size: 12px;
+                                line-height: 20px;
+                                font-weight: 700;
+                                opacity: 0.7;
+                            }
+                    }
+                }
+            
+    
+    
+    .gallery-container {
+            width: 100%;
+            background: -webkit-linear-gradient(left top, #494eb2 , #322a7d); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom right, #494eb2 , #322a7d); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, #494eb2 , #322a7d); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, #494eb2 , #322a7d); /* Standard syntax */
+            padding-top: 70px;
+            margin: 0px;
+            min-height: 700px;
+                .row {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 100px;
+                }
+                .gallery-row {
+                    width: 100%;
+                    padding: 0px;
+                ;
+                    h2.brandname {
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        letter-spacing: 4px;
+                        color: #fff;
+                        margin-bottom: 40px;
+                        }
+                        
+                     hr.featurette-divider {
+                        border: 0;
+                        border-top: 1px solid #fff;
+                        opacity: 0.3;
+                        margin-bottom: 40px;
+                    }
+                    .thumb {
+                        width: 32%;
+                    }
+          }
+       
+    }
+    
+}
+}
+
+
+.about-me {
+    padding-top: 30px;
+    min-height: 400px;
+    color: #626262;
+    background-color: #f0f0e8;
+    display: inline-block;
+    padding-left: 45px;
+    padding-top: 80px;
+    .about-img {
+        float: left;
+        width: 20%;
+        border-radius: 20%;
+        box-shadow: 0px 1px 5px #1e2a36;
+    }
+    .brandname {
+        float: left;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: "futura-pt";
+        letter-spacing: 4px;
+        padding-left: 35px;
+        margin-top: -3px;
+        padding-right: 20px;
+
+    }
+    .lead {
+        float: left;
+        width: 75%;
+        font-weight: 100;
+        text-align: left;
+        letter-spacing: 2px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 40px;
+        padding-left: 35px;
+        padding-right: 10px;
+
+    }
+}
+
+
+
 }
 
 
